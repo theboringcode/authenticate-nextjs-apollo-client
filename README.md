@@ -1,0 +1,1 @@
+# authenticate-nextjs-apollo-client
