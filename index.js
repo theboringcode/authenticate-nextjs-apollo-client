@@ -6,6 +6,7 @@ const typeDefs = gql`
     author: String
   }
   type User {
+    id: String!
     email: String!
     password: String!
   }
@@ -29,7 +30,7 @@ const books = [
 const resolvers = {
   Query: {
     books: () => books,
-    me: () => {},
+    me: () => null,
   },
 };
 const server = new ApolloServer({ typeDefs, resolvers });
